@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: bansalaseemexpressaks 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: bansalaseemexpressaks 
+    spec:
+      containers:
+        - name: bansalaseemexpressaks 
+          image: jasonzdemo.azurecr.io/bansalaseemexpressaks 
+          ports:
+          - containerPort: 3000
